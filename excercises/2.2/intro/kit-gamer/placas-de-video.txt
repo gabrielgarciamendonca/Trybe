@@ -1,0 +1,2 @@
+1 - Nvidia gtx1650
+2 - AMD rx 5500xt
