@@ -1,0 +1,43 @@
+        h1 {
+            font-family: sans-serif;
+        }
+
+        p {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 48px;
+        }
+
+        #yellow {
+            background-color: yellow;
+            font-style: italic;
+            line-height: 100px;
+            text-align: center;
+            text-decoration: line-through;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #red {
+            background-color: red;
+            font-style: italic;
+            line-height: 200px;
+            text-align: center;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #brown {
+            background-color: brown;
+            font-style: oblique;
+            line-height: 400px;
+            text-align: center;
+            text-decoration: overline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
