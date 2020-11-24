@@ -36,7 +36,7 @@ body{
     padding: 40px;
 }
 
-#stomatopoda-picture{
+.section-picture{
     object-fit: cover;
     float: left;
     width: 300px;
@@ -46,6 +46,7 @@ body{
 .section-color{
     background-color: #4A4E69;
     padding: 10px;
+    margin-top: 20px;
 }
 
 #classification th, td{
