@@ -44,6 +44,19 @@ body{
     height: 200px;
 }
 
+.list-style{
+    list-style: none;
+}
+
+.list-style a{
+    text-decoration: solid;
+    color: ivory;
+}
+
+.list-style a:hover{
+    color: #22223B;
+}
+
 .section-color{
     background-color: #4A4E69;
     padding: 10px;
