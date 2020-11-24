@@ -26,3 +26,12 @@ body{
     padding-left: 10%;
     line-height: 40px;
 }
+
+#content{
+    background-color: #22223B;
+    margin: 50px;
+}
+
+#article{
+    margin: 40px;
+}
