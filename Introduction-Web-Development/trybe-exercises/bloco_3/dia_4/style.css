@@ -30,6 +30,7 @@ body{
 #content{
     background-color: #22223B;
     margin: 50px;
+    margin-right: 400px;
 }
 
 #article{
@@ -64,10 +65,30 @@ body{
 }
 
 #classification th, td{
-    padding-right: 50px;
+    padding-right: 20px;
+}
+
+#classification th{
+    overflow: auto;
 }
 
 #classification{
     margin-left: 5em;
     position: relative;
+    overflow: auto;
+}
+
+#aside-block{
+    position: absolute;
+    top: 170px;
+    right: 0px;
+    width: 20em;
+    height: 139px;
+    padding: 1em;
+    background-color: #4A4E69;
+}
+
+.link-style{
+    text-decoration: solid;
+    color: ivory;   
 }
