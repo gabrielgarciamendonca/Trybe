@@ -33,5 +33,26 @@ body{
 }
 
 #article{
-    margin: 40px;
+    padding: 40px;
+}
+
+#stomatopoda-picture{
+    object-fit: cover;
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.section-color{
+    background-color: #4A4E69;
+    padding: 10px;
+}
+
+#classification th, td{
+    padding-right: 50px;
+}
+
+#classification{
+    margin-left: 5em;
+    position: relative;
 }
