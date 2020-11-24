@@ -1,0 +1,6 @@
+A Blindagem de um blindado só é blindada se e somente se um outro blindado  ter tinta verde
+Nem todo blindado contem tinta verde
+Toda tinta verde existente esta em blindados
+Quando e falta de luz verde toda tinta verde se torna preta
+Alemanha
+Polonia
