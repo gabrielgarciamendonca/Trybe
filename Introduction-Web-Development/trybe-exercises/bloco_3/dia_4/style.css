@@ -1,4 +1,11 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #4A4E69;
+    color: #F2E9E4;
+    margin: 0px;
 }
 
+#header{
+    text-align: center;
+    font-size: 18px;
+}
