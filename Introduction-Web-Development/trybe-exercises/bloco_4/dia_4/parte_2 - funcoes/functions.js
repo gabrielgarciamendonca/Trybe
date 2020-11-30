@@ -63,13 +63,24 @@ function moreRepeated(numbers){
     number: 0,
     repeated: 0,
   };
+  let count = 0;
   for(let index in numbers){
     for(let pos in numbers){
       if(numbers[index] === numbers[pos]){
-        repeat += 1;
+        count += 1;
       }
     }
+    if(index == 0){
+      repeat.repeated = count;
+      repeat.number = numbers[index];
+    }else if(count > repeat.repeated){
+      repeat.repeated = count;
+      repeat.number = numbers[index];
+    }
+    count =0;
   }
+
+  return repeat;
 }
 
 //hub
@@ -77,4 +88,5 @@ console.log(verificaPalindrome('luzazul'));
 console.log(higherIndex([2, 3, 6, 7, 10, 1]));
 console.log(lowestIndex([2, 4, 6, 7, 10, 0, -3]));
 console.log(biggestCharacter(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log(moreRepeated([2, 3, 2, 5, 8, 2, 3]));
 
