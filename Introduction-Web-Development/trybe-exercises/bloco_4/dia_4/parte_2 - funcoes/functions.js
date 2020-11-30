@@ -83,10 +83,40 @@ function moreRepeated(numbers){
   return repeat;
 }
 
+
+function summation(number){
+  let sum = 0;
+  for(let index = 0; index < number; index+=1) {
+    sum += number-index;
+  }
+  return sum;
+}
+
+function verificaFimPalavra(palavra1, palavra2){
+  let count = 0;
+  if(palavra2.length > palavra1.length){
+    return false;
+  }else{
+    for(let char in palavra2){
+      if(palavra1[palavra1.length - 1 - char] === palavra2[palavra2.length - 1 - char]){
+        count += 1;
+      }
+    }
+  }
+
+  if(count === palavra2.length){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 //hub
 console.log(verificaPalindrome('luzazul'));
 console.log(higherIndex([2, 3, 6, 7, 10, 1]));
 console.log(lowestIndex([2, 4, 6, 7, 10, 0, -3]));
 console.log(biggestCharacter(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 console.log(moreRepeated([2, 3, 2, 5, 8, 2, 3]));
+console.log(summation(7));
+console.log(verificaFimPalavra("trybe", "be")); 
 
