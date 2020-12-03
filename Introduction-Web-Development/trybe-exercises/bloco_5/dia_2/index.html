@@ -76,10 +76,17 @@
             centerContent.className = 'center-content';
             document.querySelector('div.main-content').appendChild(centerContent);
         }
+
+        function ex4() {
+            let someText = document.createElement('p');
+            someText.innerText = 'Para ricochetear algum projetil, é necessário angular o casco a n graus';
+            document.querySelector('.main-content div').appendChild(someText);
+        }
         //Hub of excercices
         ex1();
         ex2();
         ex3();
+        ex4();
 
     </script>
 </body>
