@@ -147,6 +147,12 @@
         function addDescription() {
             document.querySelectorAll('h3').className = 'description';
         }
+
+        function remove5() {
+            let pass5 = document.querySelector('div.left-content');
+            let fatherContent = pass5.parentNode;
+            fatherContent.removeChild(pass5);
+        }
         //Hub of excercices
         ex1();
         ex2();
@@ -160,6 +166,7 @@
 
         addTitle();
         addDescription();
+        remove5();
     </script>
 </body>
 
