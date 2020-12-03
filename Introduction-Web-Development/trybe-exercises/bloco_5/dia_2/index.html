@@ -124,6 +124,21 @@
 
             return listU;
         }
+
+        function ex9() {
+            let h3 = generateH3('Olá');
+            document.querySelector('div.main-content').appendChild(h3);
+            h3 = generateH3('mundo,');
+            document.querySelector('div.main-content').appendChild(h3);
+            h3 = generateH3('Como vai ?');
+            document.querySelector('div.main-content').appendChild(h3);
+        }
+
+        function generateH3(text) {
+            let h3 = document.createElement('h3');
+            h3.innerText = text;
+            return h3;
+        }
         //Hub of excercices
         ex1();
         ex2();
@@ -133,6 +148,7 @@
         ex6();
         ex7();
         ex8();
+        ex9();
     </script>
 </body>
 
