@@ -71,9 +71,15 @@
             document.body.appendChild(mainContent);
         }
         
+        function ex3() {
+            let centerContent = document.createElement('div');
+            centerContent.className = 'center-content';
+            document.querySelector('div.main-content').appendChild(centerContent);
+        }
         //Hub of excercices
         ex1();
         ex2();
+        ex3();
 
     </script>
 </body>
