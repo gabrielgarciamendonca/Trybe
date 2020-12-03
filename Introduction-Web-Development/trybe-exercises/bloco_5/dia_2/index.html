@@ -153,6 +153,11 @@
             let fatherContent = pass5.parentNode;
             fatherContent.removeChild(pass5);
         }
+
+        function centralizeDiv() {
+            let elementToCentralize = document.querySelector('div.right-content');
+            elementToCentralize.style.margin = 'auto';
+        }
         //Hub of excercices
         ex1();
         ex2();
@@ -167,6 +172,7 @@
         addTitle();
         addDescription();
         remove5();
+        centralizeDiv();
     </script>
 </body>
 
