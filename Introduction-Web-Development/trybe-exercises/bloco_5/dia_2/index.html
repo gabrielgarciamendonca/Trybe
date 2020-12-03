@@ -101,6 +101,29 @@
             image.setAttribute('src', 'https://picsum.photos/200')
             document.querySelector('div.left-content').appendChild(image);
         }
+
+        function ex8() {
+            let listU = document.createElement('ul');
+            listU = liAdd('um', listU);
+            listU = liAdd('dois', listU);
+            listU = liAdd('três', listU);
+            listU = liAdd('quatro', listU);
+            listU = liAdd('cinco', listU);
+            listU = liAdd('seis', listU);
+            listU = liAdd('sete', listU);
+            listU = liAdd('oito', listU);
+            listU = liAdd('nove', listU);
+            listU = liAdd('dez', listU);
+            document.querySelector('div.right-content').appendChild(listU);
+        }
+
+        function liAdd(number, listU) {
+            let li = document.createElement('li');
+            li.innerText = number;
+            listU.appendChild(li);
+
+            return listU;
+        }
         //Hub of excercices
         ex1();
         ex2();
@@ -109,7 +132,7 @@
         ex5();
         ex6();
         ex7();
-
+        ex8();
     </script>
 </body>
 
