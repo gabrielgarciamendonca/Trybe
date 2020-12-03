@@ -82,11 +82,18 @@
             someText.innerText = 'Para ricochetear algum projetil, é necessário angular o casco a n graus';
             document.querySelector('.main-content div').appendChild(someText);
         }
+
+        function ex5() {
+            let leftContent = document.createElement('div');
+            leftContent.className = 'left-content';
+            document.querySelector('div.main-content').appendChild(leftContent);
+        }
         //Hub of excercices
         ex1();
         ex2();
         ex3();
         ex4();
+        ex5();
 
     </script>
 </body>
