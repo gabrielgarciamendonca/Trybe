@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function ex1() {
+            let title = document.createElement('h1');
+            title.innerText = 'Exercício 5.2 - JavaScript DOM';
+            document.body.appendChild(title);
+        }
+
+        function ex2() {
+            let mainContent = document.createElement('div');
+            mainContent.className = 'main-content';
+            document.body.appendChild(mainContent);
+        }
+        
+        function ex3() {
+            let centerContent = document.createElement('div');
+            centerContent.className = 'center-content';
+            document.querySelector('div.main-content').appendChild(centerContent);
+        }
+
+        function ex4() {
+            let someText = document.createElement('p');
+            someText.innerText = 'Para ricochetear algum projetil, é necessário angular o casco a n graus';
+            document.querySelector('.main-content div').appendChild(someText);
+        }
+
+        function ex5() {
+            let leftContent = document.createElement('div');
+            leftContent.className = 'left-content';
+            document.querySelector('div.main-content').appendChild(leftContent);
+        }
+
+        function ex6() {
+            let rightContent = document.createElement('div');
+            rightContent.className = 'right-content';
+            document.querySelector('div.main-content').appendChild(rightContent);
+        }
+
+        function ex7() {
+            let image = document.createElement('img');
+            image.className = 'small-image';
+            image.setAttribute('src', 'https://picsum.photos/200')
+            document.querySelector('div.left-content').appendChild(image);
+        }
+
+        function ex8() {
+            let listU = document.createElement('ul');
+            listU = liAdd('um', listU);
+            listU = liAdd('dois', listU);
+            listU = liAdd('três', listU);
+            listU = liAdd('quatro', listU);
+            listU = liAdd('cinco', listU);
+            listU = liAdd('seis', listU);
+            listU = liAdd('sete', listU);
+            listU = liAdd('oito', listU);
+            listU = liAdd('nove', listU);
+            listU = liAdd('dez', listU);
+            document.querySelector('div.right-content').appendChild(listU);
+        }
+
+        function liAdd(number, listU) {
+            let li = document.createElement('li');
+            li.innerText = number;
+            listU.appendChild(li);
+
+            return listU;
+        }
+
+        function ex9() {
+            let h3 = generateH3('Olá');
+            document.querySelector('div.main-content').appendChild(h3);
+            h3 = generateH3('mundo,');
+            document.querySelector('div.main-content').appendChild(h3);
+            h3 = generateH3('Como vai ?');
+            document.querySelector('div.main-content').appendChild(h3);
+        }
+
+        function generateH3(text) {
+            let h3 = document.createElement('h3');
+            h3.innerText = text;
+            return h3;
+        }
+
+        function addTitle() {
+            document.querySelector('h1').className = 'title';
+        }
+
+        function addDescription() {
+            document.querySelectorAll('h3').className = 'description';
+        }
+
+        function remove5() {
+            let pass5 = document.querySelector('div.left-content');
+            let fatherContent = pass5.parentNode;
+            fatherContent.removeChild(pass5);
+        }
+
+        function centralizeDiv() {
+            let elementToCentralize = document.querySelector('div.right-content');
+            elementToCentralize.style.margin = 'auto';
+        }
+
+        function changeBackgroundColor() {
+            let elementToChange = document.querySelector('div.center-content').parentNode;
+            
+            elementToChange.style.backGroundColor = 'green';
+            
+        }
+
+        function removeElement() {
+            let list = document.querySelectorAll('div.right-content ul li');
+            console.log(list);
+            for(let index in list){
+                if(index === '9' || index === '8'){
+                    list[index].remove();
+                }
+            }
+        }
+        //Hub of excercices
+        ex1();
+        ex2();
+        ex3();
+        ex4();
+        ex5();
+        ex6();
+        ex7();
+        ex8();
+        ex9();
+
+        addTitle();
+        addDescription();
+        remove5();
+        centralizeDiv();
+        changeBackgroundColor();
+        removeElement();
+    </script>
+</body>
+
+</html>
