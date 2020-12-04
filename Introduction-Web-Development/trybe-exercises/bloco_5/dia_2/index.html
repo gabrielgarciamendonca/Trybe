@@ -158,6 +158,23 @@
             let elementToCentralize = document.querySelector('div.right-content');
             elementToCentralize.style.margin = 'auto';
         }
+
+        function changeBackgroundColor() {
+            let elementToChange = document.querySelector('div.center-content').parentNode;
+            
+            elementToChange.style.backGroundColor = 'green';
+            
+        }
+
+        function removeElement() {
+            let list = document.querySelectorAll('div.right-content ul li');
+            console.log(list);
+            for(let index in list){
+                if(index === '9' || index === '8'){
+                    list[index].remove();
+                }
+            }
+        }
         //Hub of excercices
         ex1();
         ex2();
@@ -173,6 +190,8 @@
         addDescription();
         remove5();
         centralizeDiv();
+        changeBackgroundColor();
+        removeElement();
     </script>
 </body>
 
