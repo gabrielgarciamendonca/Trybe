@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.V register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <fieldset>
+    <!-- DADOS PESSOAIS -->
+    <div>
+      <label for="name-field">Nome:</label>
+      <input required maxlength="40" autocomplete="off" type="text" name="name" id="name-field">
+    </div>
+    <br>
+    <div>
+      <label for="email-field">Email:</label>
+      <input required maxlength="50" autocomplete="off" type="email" name="email" id="email-field">
+    </div>
+    <br>
+    <div>
+      <label for="tax-id-field">CPF:</label>
+      <input required maxlength="11" autocomplete="off" type="text" name="tax-id" id="tax-id-field">
+    </div>
+    <br>
+    <div>
+      <label for="address-field">Endereço:</label>
+      <input required maxlength="200" type="text" name="address" id="address-field">
+    </div>
+    <br>
+    <div>
+      <label for="states-field">Estado:</label>
+      <select required name="states" id="states-field">
+      </select>
+    </div>
+    <br>
+    <div>
+      <input required type="radio" name="type" id="home-field" value="home">
+      <label for="home-field">Casa</label>
+      <input required type="radio" name="type" id="apartment-field" value="apartment">
+      <label for="apartment-field">Apartamento</label>
+    </div>
+  </fieldset>
+  <script src="/script.js"></script>
+</body>
+</html>
