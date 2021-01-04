@@ -1,5 +1,11 @@
 window.onload = function() {
   defineStates();
+  const submit = document.querySelector('#submit-btn');
+  submit.addEventListener('clicked', submitBtn);
+}
+
+function submitBtn(event) {
+  
 }
 
 function defineStates() {
