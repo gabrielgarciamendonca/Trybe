@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.V register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form action="" method="GET">
+    
+    <!-- DADOS PESSOAIS -->
+    <fieldset>
+      <div>
+        <label for="name-field">Nome:</label>
+        <input class="input-event" required maxlength="40" autocomplete="off" type="text" name="name" id="name-field">
+      </div>
+      <br>
+      <div>
+        <label for="email-field">Email:</label>
+        <input class="input-event" required maxlength="50" autocomplete="off" type="email" name="email" id="email-field">
+      </div>
+      <br>
+      <div>
+        <label for="tax-id-field">CPF:</label>
+        <input class="input-event" required maxlength="11" autocomplete="off" type="text" name="tax-id" id="tax-id-field">
+      </div>
+      <br>
+      <div>
+        <label for="address-field">Endereço:</label>
+        <input class="input-event" required maxlength="200" type="text" name="address" id="address-field">
+      </div>
+      <br>
+      <div>
+        <label for="states-field">Estado:</label>
+        <select class="input-event" required name="states" id="states-field">
+        </select>
+      </div>
+      <br>
+      <div>
+        <input class="input-event" required type="radio" name="type" id="home-field" value="home">
+        <label for="home-field">Casa</label>
+        <input class="input-event" required type="radio" name="type" id="apartment-field" value="apartment">
+        <label for="apartment-field">Apartamento</label>
+      </div>
+    </fieldset>
+
+    <!-- DADOS ULTIMO EMPREGO -->
+    <fieldset>
+      <div>
+        <label for="resume-cv-field">Resumo do Curriculo:</label>
+        <textarea required name="resume-cv" id="resume-cv-field" cols="100" rows="10" maxlength="1000"></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="office-field">Cargo:</label>
+        <input required maxlength="40" type="text" name="office" id="office-field">
+      </div>
+      <br>
+      <div>
+        <label for="office-description-field">Descrição do Cargo:</label>
+        <input required maxlength="500" type="text" name="office-description" id="office-description-field">
+      </div>
+      <br>
+      <div>
+        <label for="date-field">Data de Inicio:</label>
+        <input required type="date" name="date" id="date-field">
+      </div>
+    </fieldset>
+
+    <!-- BOTÃO DO FORMULÁRIO -->
+    <button type="submit" id="submit-btn">ENVIAR</button>
+  </form>
+  
+  <script src="/script.js"></script>
+</body>
+</html>
