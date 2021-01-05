@@ -11,6 +11,7 @@
     
     <!-- DADOS PESSOAIS -->
     <fieldset>
+      <legend>Dados Pessoais</legend>
       <div>
         <label for="name-field">Nome:</label>
         <input class="input-event" required maxlength="40" autocomplete="off" type="text" name="name" id="name-field">
@@ -47,6 +48,7 @@
 
     <!-- DADOS ULTIMO EMPREGO -->
     <fieldset>
+      <legend>Dados do Ultimo Emprego</legend>
       <div>
         <label for="resume-cv-field">Resumo do Curriculo:</label>
         <textarea required name="resume-cv" id="resume-cv-field" cols="100" rows="10" maxlength="1000"></textarea>
@@ -71,6 +73,25 @@
     <!-- BOTÃO DO FORMULÁRIO -->
     <button type="submit" id="submit-btn">ENVIAR</button>
   </form>
+  
+  <article>
+    <section>
+      <h3 id="name">NOME</h3>
+      <p id="email"><em>EMAIL</em></p>
+      <p id="tax-id"><em>CPF</em></p>
+      <p id="address"><em>ENDEREÇO</em></p>
+      <p id="state"><em>ESTADO</em></p>
+      <p id="type"><em>CASA</em></p>
+    </section>
+    <section>
+      <h4>ULTIMO EMPREGO</h4>
+      <p id="resume"><em>RESUMO DO CURRICULO</em></p>
+      <p id="office"><em>CARGO</em></p>
+      <p id="office-description"><em>DESCRIÇÃO DO CARGO</em></p>
+      <p id="start-date"><em>DATA DE INICIO</em></p>
+    </section>
+  </article>
+  
   
   <script src="/script.js"></script>
 </body>

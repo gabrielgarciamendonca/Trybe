@@ -2,10 +2,30 @@ window.onload = function() {
   defineStates();
   const submit = document.querySelector('#submit-btn');
   submit.addEventListener('clicked', submitBtn);
+  defineResume();
+}
+
+function definePersonalData() {
+  const name = document.querySelector('#name');
+  name.innerText = document.querySelector('#name-field').innerText;
+  const email = document.querySelector('#email');
+  email.innerText = document.querySelector('#email-field').innerText;
+  const taxId = document.querySelector('#tax-id');
+  taxId.innerText = document.querySelector('#tax-id-field').innerText;
+  const address = document.querySelector('#address');
+  address.innerText = document.querySelector('#address-field').innerText;
+  const state = document.querySelector('#states');
+  state.innerText = document.querySelector('#states-field').innerText;
+  const type = document.querySelector('#type');
+  type.innerText = document.querySelector('.input-event').innerText;
+}
+
+function defineResume() {
+  definePersonalData();
 }
 
 function submitBtn(event) {
-  
+  defineResume();
 }
 
 function defineStates() {
