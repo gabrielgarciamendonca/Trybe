@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <form action="" method="GET">
       <!-- DADOS PESSOAIS -->
       <div class="form-group row">
@@ -35,7 +35,7 @@
       <div class="form-group row">
         <div class="form-group col row">
           <label class="col col-form-label" for="address-field">Endereço:</label>
-          <div class="col-sm-8">
+          <div class="col">
             <input class="form-control" required maxlength="200" type="text" name="address" id="address-field">
           </div>
         </div>
@@ -73,8 +73,8 @@
         <input class="form-control" required type="date" name="date" id="date-field">
       </div>
       <div class="form-group">
-        <button class="form-control" type="submit" id="submit-btn">ENVIAR</button>
-        <button class="form-control" type="reset" id="clear">LIMPAR</button>
+        <button class="btn btn-outline-success" type="submit" id="submit-btn">ENVIAR</button>
+        <button class="btn btn-outline-danger" type="reset" id="clear">LIMPAR</button>
       </div>
     </form>
   </div>
