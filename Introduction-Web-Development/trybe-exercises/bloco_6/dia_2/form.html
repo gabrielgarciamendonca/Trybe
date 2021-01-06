@@ -3,96 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
   <title>C.V register</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form action="" method="GET">
-    
-    <!-- DADOS PESSOAIS -->
-    <fieldset>
-      <legend>Dados Pessoais</legend>
-      <div>
-        <label for="name-field">Nome:</label>
-        <input required maxlength="40" autocomplete="off" type="text" name="name" id="name-field">
-      </div>
-      <br>
-      <div>
-        <label for="email-field">Email:</label>
-        <input required maxlength="50" autocomplete="off" type="email" name="email" id="email-field">
-      </div>
-      <br>
-      <div>
-        <label for="tax-id-field">CPF:</label>
-        <input required maxlength="11" autocomplete="off" type="text" name="tax-id" id="tax-id-field">
-      </div>
-      <br>
-      <div>
-        <label for="address-field">Endereço:</label>
-        <input required maxlength="200" type="text" name="address" id="address-field">
-      </div>
-      <br>
-      <div>
-        <label for="states-field">Estado:</label>
-        <select required name="states" id="states-field">
-        </select>
-      </div>
-      <br>
-      <div>
-        <input required type="radio" name="type" id="home-field" value="casa">
-        <label for="home-field">Casa</label>
-        <input required type="radio" name="type" id="apartment-field" value="apartmento">
-        <label for="apartment-field">Apartamento</label>
-      </div>
-    </fieldset>
 
-    <!-- DADOS ULTIMO EMPREGO -->
-    <fieldset>
-      <legend>Dados do Ultimo Emprego</legend>
-      <div>
+  <div class="container-fluid">
+    <form action="" method="GET">
+      <!-- DADOS PESSOAIS -->
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="name-field">Nome:</label>
+        <div class="col-sm-10">
+          <input class="form-control" required maxlength="40" autocomplete="off" type="text" name="name" id="name-field">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="email-field">Email:</label>
+        <div class="col-sm-10">
+          <input class="form-control" required maxlength="50" autocomplete="off" type="email" name="email" id="email-field">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="tax-id-field">CPF:</label>
+        <div class="col-sm-10">
+          <input class="form-control" required maxlength="11" autocomplete="off" type="text" name="tax-id" id="tax-id-field">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="form-group col row">
+          <label class="col col-form-label" for="address-field">Endereço:</label>
+          <div class="col">
+            <input class="form-control" required maxlength="200" type="text" name="address" id="address-field">
+          </div>
+        </div>
+        <div class="form-group col row">
+          <label class="col col-form-label" for="states-field">Estado:</label>
+          <div class="col">
+            <select class="form-control" required name="states" id="states-field">
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <input class="form-check-input" required type="radio" name="type" id="home-field" value="casa">
+        <label class="form-check-label" for="home-field">Casa</label>
+        <input class="form-check-input" required type="radio" name="type" id="apartment-field" value="apartmento">
+        <label class="form-check-label" for="apartment-field">Apartamento</label>
+      </div>
+  
+      <!-- DADOS ULTIMO EMPREGO -->
+      <div class="form-group">
         <label for="resume-cv-field">Resumo do Curriculo:</label>
-        <textarea required name="resume-cv" id="resume-cv-field" cols="100" rows="10" maxlength="1000"></textarea>
+        <textarea class="form-control" required name="resume-cv" id="resume-cv-field" cols="100" rows="10" maxlength="1000"></textarea>
       </div>
-      <br>
-      <div>
+      <div class="form-group">
         <label for="office-field">Cargo:</label>
-        <input required maxlength="40" type="text" name="office" id="office-field">
+        <input class="form-control" required maxlength="40" type="text" name="office" id="office-field">
       </div>
-      <br>
-      <div>
+      <div class="form-group">
         <label for="office-description-field">Descrição do Cargo:</label>
-        <input required maxlength="500" type="text" name="office-description" id="office-description-field">
+        <input class="form-control" required maxlength="500" type="text" name="office-description" id="office-description-field">
       </div>
-      <br>
-      <div>
+      <div class="form-group"> 
         <label for="date-field">Data de Inicio:</label>
-        <input required type="date" name="date" id="date-field">
+        <input class="form-control" required type="date" name="date" id="date-field">
       </div>
-    </fieldset>
-
-    <!-- BOTÃO DO FORMULÁRIO -->
-    <button type="submit" id="submit-btn">ENVIAR</button>
-    <button type="reset" id="clear">LIMPAR</button>
-  </form>
+      <div class="form-group">
+        <button class="btn btn-outline-success" type="submit" id="submit-btn">ENVIAR</button>
+        <button class="btn btn-outline-danger" type="reset" id="clear">LIMPAR</button>
+      </div>
+    </form>
+  </div>
   
-  <article>
-    <section>
-      <h3 id="name"></h3>
-      <p id="email"><em></em></p>
-      <p id="tax-id"><em></em></p>
-      <p id="address"><em></em></p>
-      <p id="state"><em></em></p>
-      <p id="type"><em></em></p>
-    </section>
-    <section>
-      <p id="resume"><em></em></p>
-      <p id="office"><em></em></p>
-      <p id="office-description"><em></em></p>
-      <p id="start-date"><em></em></p>
-    </section>
-  </article>
-  
-  
+  <div class="container-fluid border">
+    <article>
+      <section>
+        <h3 id="name"></h3>
+        <p id="email"><em></em></p>
+        <p id="tax-id"><em></em></p>
+        <p id="address"><em></em></p>
+        <p id="state"><em></em></p>
+        <p id="type"><em></em></p>
+      </section>
+      <section>
+        <p id="resume"><em></em></p>
+        <p id="office"><em></em></p>
+        <p id="office-description"><em></em></p>
+        <p id="start-date"><em></em></p>
+      </section>
+    </article>
+  </div>
   <script src="/script.js"></script>
 </body>
 </html>
