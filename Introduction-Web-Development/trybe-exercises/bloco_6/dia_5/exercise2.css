@@ -72,7 +72,7 @@ footer {
 @media screen and (min-width: 780px) {
   .asides {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .aside-one {
@@ -104,7 +104,7 @@ footer {
   }
   .menu-container nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
   }
 
