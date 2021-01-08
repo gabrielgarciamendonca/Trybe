@@ -70,5 +70,47 @@ footer {
 }
 
 @media screen and (min-width: 780px) {
+  .asides {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aside-one {
+    padding: 20px;
+  }
+
+  .aside-two {
+    padding: 20px;
+  }
+
+  .main-content {
+    padding: 80px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  .menu-container {
+    font-size: 1.3em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   
+  .menu-container nav {
+    display: inline;
+    font-size: 12px;
+    width: 50%;
+  }
+  .menu-container nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .menu-container nav ul li:hover{
+    transition: 1s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
