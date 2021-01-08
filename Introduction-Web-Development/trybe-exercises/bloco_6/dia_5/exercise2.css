@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(167, 113, 173);
+  color: rgb(253, 184, 222);
+}
+
+.menu-container {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(105, 43, 134);
+  color: azure;
+  padding: 10px;
+}
+
+.menu-container nav {
+  display: none;
+}
+
+.asides {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(21, 5, 32);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.asides h2 {
+  text-decoration-line: underline;
+  font-size: 1.2em;
+}
+
+.asides ul {
+  list-style: none;
+}
+
+.asides ul li{
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.main-content {
+  background-color: rgb(129, 17, 53);
+  color: rgb(207, 181, 102);
+  border: 1px solid rgb(207, 181, 102);
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 1.4em;
+  text-decoration-line: underline;
+  margin-bottom: 40px;
+}
+
+.main-content p {
+  margin: 15px 0;
+}
+
+footer {
+  background-color: rgb(21, 5, 32);
+  padding: 10px;
+}
+
+@media screen and (min-width: 780px) {
+  .asides {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .aside-one {
+    padding: 20px;
+  }
+
+  .aside-two {
+    padding: 20px;
+  }
+
+  .main-content {
+    padding: 80px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  .menu-container {
+    font-size: 1.3em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .menu-container nav {
+    display: inline;
+    font-size: 12px;
+    width: 50%;
+  }
+  .menu-container nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  .menu-container nav ul li:hover{
+    transition: 1s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
