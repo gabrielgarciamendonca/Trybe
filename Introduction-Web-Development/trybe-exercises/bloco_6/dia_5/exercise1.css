@@ -34,3 +34,17 @@ figure {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lavender;
+    font-size: 1.5em;
+    margin: 120px;
+    color: darkslategray;
+    max-width: 80%;
+  }
+  figure {
+    width: 30%;
+    margin: 10px;
+  }
+}
