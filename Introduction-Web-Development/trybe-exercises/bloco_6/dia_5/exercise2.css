@@ -4,3 +4,71 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(167, 113, 173);
+  color: rgb(253, 184, 222);
+}
+
+.menu-container {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(105, 43, 134);
+  color: azure;
+  padding: 10px;
+}
+
+.menu-container nav {
+  display: none;
+}
+
+.asides {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(21, 5, 32);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.asides h2 {
+  text-decoration-line: underline;
+  font-size: 1.2em;
+}
+
+.asides ul {
+  list-style: none;
+}
+
+.asides ul li{
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.main-content {
+  background-color: rgb(129, 17, 53);
+  color: rgb(207, 181, 102);
+  border: 1px solid rgb(207, 181, 102);
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 1.4em;
+  text-decoration-line: underline;
+  margin-bottom: 40px;
+}
+
+.main-content p {
+  margin: 15px 0;
+}
+
+footer {
+  background-color: rgb(21, 5, 32);
+  padding: 10px;
+}
+
+@media screen and (min-width: 780px) {
+  
+}
